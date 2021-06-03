@@ -12,7 +12,7 @@ import pandas as pd
 
 print(os.path)
 data = pd.read_csv("hey.csv")
-fromaddr = "sanjeev.boppidi03@gmail.com"
+fromaddr = "xyz03@abc.com"
 
 # creates SMTP session 
 s = smtplib.SMTP('smtp.gmail.com', 587) 
@@ -21,7 +21,7 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls() 
 
 # Authentication 
-s.login(fromaddr, "saisanju11") 
+s.login(fromaddr, "*******") 
 
 for i in range(len(data['NAME'])):
 
